@@ -1,0 +1,18 @@
+step 01 use week 9 example search xml as example
+load xml tips in w3c school
+https://www.w3schools.com/xml/tryit.asp?filename=try_dom_loadxmldoc
+https://www.w3schools.com/xml/dom_examples.asp
+https://www.w3schools.com/xml/tryit.asp?filename=try_dom_loadxmldoc2
+
+step 02 use code of template provided from instructor, modify it for this circumstance
+-> make it in a line by line to show information
+
+step 03 modify javascript to read questions from xml file and load it as questions and display them
+-> add radio button for each questions
+-> load answer into global variable
+
+step 04 create the function for calculate the grade
+-> retrieve each radio button value
+-> match them with the answer to calculate the grade
+
+step 05 modify the css file to make it look better.

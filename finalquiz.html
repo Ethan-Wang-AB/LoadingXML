@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Final Quiz</title>
+    <script type="text/javascript" src="finalquiz.js">    </script>
+    <script type="text/javascript" src="StandardJSFunctions.js">    </script>
+    <link type='text/css' rel='stylesheet' href="finalquiz.css">
+</head>
+
+<body>
+
+    <h1>Final Quiz</h1>
+   
+    <div id="wrapper">
+        <!-- These templates are not visible in the web page, so to use them we must 
+             clone them, and insert them as a child of another element
+        -->
+        <template id='hdr-template'>
+            <div class="header-row">
+                <span class="hdr-title">Multiple Choices</span>
+
+            </div>
+        </template>
+        <template id='row-template'>
+            <div class="row">
+                <span class="row-rowId"> </span>
+                <span class="row-question"> </span>
+                <div class="row-a">
+                    <!-- <input class="row-a1" type="radio" value=1 checked> -->
+                    <label for="row-a" class="row-a"></label>
+                </div>
+                <div class="row-b">
+                    <!-- <input class="row-a1" type="radio" value=2> -->
+                    <label for="row-b" class="row-b"></label>
+                </div>
+                <div class="row-c">
+                    <!-- <input class="row-a1" type="radio" value=3> -->
+                    <label for="row-c" class="row-c"></label>
+                </div>
+                <div class="row-d">
+                    <!-- <input class="row-a1" type="radio" value=4> -->
+                    <label for="row-d" class="row-d"></label>
+                </div>
+            </div>
+        </template>
+
+        <div id="output-area" class='hidden'>
+            <div id="rows-count">
+                There are <span id="row-count">0</span> questions in this final quiz  <p>Each question worths one grade </p>
+            </div>
+            <div id="output-grid">
+                <!-- The templates will be cloned, and updated, then placed here -->
+            </div>
+        </div>
+        <div class="bottom">
+            <input type="button" value="Grade Quiz" onclick="calctotal();" >
+
+           
+        </div>
+        <div class="bottom" id="result">
+      
+
+           
+        </div>
+    </div>
+</body>
+
+</html>

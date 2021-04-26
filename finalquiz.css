@@ -1,0 +1,76 @@
+/* This styles the web page */
+
+@media all {
+    body{
+        font-size: larger;
+    }
+    #wrapper {
+        margin-left: 2%;
+        margin-right: 2%;
+        width: 80%;
+        /* display: inline-block; */
+        border: 1px solid brown;
+        box-shadow: 2px 2px 20px darkslateblue;
+        padding: 30px;
+    }
+}
+
+/* This styles the grid */
+
+@media all {
+    #output-grid {
+        /* display: flex; */
+        flex-direction: column;
+    }
+    #rows-count {
+        background-color: burlywood;
+        margin: 10px 20px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .header-row {
+        /* display: inline-flex; */
+        background-color: brown;
+        padding: 4px;
+        padding-left: 20px;
+        color: white;
+        font-size: smaller;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .row {
+        /* display: inline-flex; */
+        padding: 2px;
+        padding-left: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .header-row span, .row span {
+        margin-right: 10px;
+    }
+    .odd-row {
+        background-color: rgb(250, 237, 220);
+    }
+    .even-row {
+        background-color: burlywood;
+    }
+    .hdr-rowId, .row-rowId {
+        width: 60px;
+        text-align: right;
+    }
+    .hdr-name, .row-name {
+        width: 200px;
+    }
+    .hdr-email, .row-email {
+        width: 500px;
+    }
+    .hdr-company, .row-company {
+        width: 380px;
+    }
+}
+
+@media print {
+    body {
+        background-color: none;
+        background-image: none;
+        font-family: sans-serif;
+    }
+}
